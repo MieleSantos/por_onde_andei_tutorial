@@ -1,4 +1,7 @@
-# Por Onde Andei: Edição Palestras
+# Por Onde Andei: Tutorial 09 Python Brasil 2021
+
+#### Tutorial Viajando por uma API protegida: Implementando uma API com Flask
+#### Ministrado(a) por: Jessica Temporal
 
 Esta API é escrita em Flask e usa Pandas, Folium e Auth0. Seu objetivo principal é servir um mapa de lugares que foram marcados.
 
