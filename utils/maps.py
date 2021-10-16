@@ -26,3 +26,14 @@ def add_maker(my_map, df):
             popup=place['name']
         ).add_to(my_map)
     return my_map
+
+
+def create_map():
+    try:
+        dados = load_data()
+        my_mapa = create_standard_map()
+        my_new_mapa = add_maker(my_mapa, dados)
+        my_new_mapa.save("templates/my_new_map.html")
+    except:
+        return False
+    return True
