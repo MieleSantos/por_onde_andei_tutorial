@@ -40,13 +40,11 @@ gunicorn app:app
 
 Acesse: [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
 
-## Como Usar Esse Repo
+### Navegando pelos passos
 
-### Navegando pelos branches
-
-| Branch | Explicação |
+| Passos | Explicação |
 | ----------- | ------- |
-| `main` | Tudo que você precisa para fazer o setup inicial do projeto |
+| `passo-0` | Tudo que você precisa para fazer o setup inicial do projeto |
 | `passo-1` | Vamos criar os dois primeiros endpoints, templates e rodar o projeto |
 | `passo-2` | Vamos criar os dois endpoints que geram o nosso mapa e as funções que fazem ajustes de dados |
 | `passo-3` | Vamos configurar a conta na Auth0 e proteger os endpoints |
