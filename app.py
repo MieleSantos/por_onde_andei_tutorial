@@ -1,5 +1,5 @@
-from flask import Flask, render_template, redirect, url_for
-from utils.maps import create_map
+from flask import Flask, render_template, redirect, request, url_for
+from utils.maps import create_map, create_new_place
 
 app = Flask(__name__)
 
@@ -17,6 +17,17 @@ def oops():
 
 @app.get('/ping')
 def update_map():
+    created = create_map()
+    if created:
+        return render_template("index.html")
+
+    return redirect(url_for("oops"))
+
+
+@app.post("/places")
+def new_place():
+    place_data = request.json
+    create_new_place(place_data)
     created = create_map()
     if created:
         return render_template("index.html")
