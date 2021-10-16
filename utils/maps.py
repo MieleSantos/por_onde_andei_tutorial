@@ -33,7 +33,15 @@ def create_map():
         dados = load_data()
         my_mapa = create_standard_map()
         my_new_mapa = add_maker(my_mapa, dados)
-        my_new_mapa.save("templates/my_new_map.html")
+        my_new_mapa.save("templates/index.html")
     except:
         return False
     return True
+
+
+def create_new_place(place_data):
+    df = load_data()
+    result = df.append(place_data, ignore_index=True)
+    result.drop_duplicates(keep=False)
+
+    save_data(result)
