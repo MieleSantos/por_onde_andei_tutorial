@@ -1,5 +1,3 @@
 
   
-app/templates/* linguist-vendored
-app/modelos/* linguist-vendored
-app/static/* linguist-vendored
+templates/* linguist-vendored
